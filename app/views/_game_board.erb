@@ -1,0 +1,9 @@
+<% @players.each_with_index do |player, index| %>
+<ol class="track" id="player<%= player.id  %>" data-player-id="<%= player.id %>" data-player-name="<%= player.player_name %>" data-player-key='<%= 80 + index %>'>
+  <p><%= player.player_name %></p>
+  <li class="active"></li>
+  <% 9.times do %>
+  <li></li>
+  <% end %>
+</ol>
+<% end %>

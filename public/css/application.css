@@ -1,14 +1,18 @@
 .container {
   background-color: #D1D1D1;
-  width: 400px;
+  width: 100%;
   border-radius: 10px;
   margin: 20px auto;
   padding: 20px;
   text-align: center;
   box-shadow: rgba(0,0,0,0.4) 0px 7px 10px, inset rgba(0,0,0,0.4) 0px -2px 2px;
-
 }
 
+
+.game_board {
+  padding:30px;
+  margin: 0 auto;
+}
 header{
   top:0px;
   position: fixed;
@@ -44,12 +48,7 @@ input {
 }
 
 
-input.button{
-  background-color:#3498db;
-  border:none;
-  border-radius: 5px;
-  color:white;
-}
+
 
 .logout {
   display: inline-block;
@@ -77,10 +76,17 @@ body {
   font-style: italic;
 }
 
+p {
+  width: 90px;
+  display: inline-block;
+  margin: 0 auto 0 auto;
+}
+
 ol {
   list-style-type: none;
-  margin: 0 ;
-  padding:0 ;
+  width: 600px;
+  margin: 0 auto ;
+  padding: 0 ;
 }
 
 ol li {
@@ -92,21 +98,48 @@ ol li {
   border: 1px solid black;
 }
 
+.game_over {
+  height: 500px;
+  width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
 .active {
   background: black;
 }
 
-.reset {
-  width: 200px;
+.reset_game_button {
+  width: 170px;
   height: 30px;
   border-radius: 5px;
   background-color: black;
   color: white;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 20px auto;
   text-align: center;
-  padding-top: 10px;
+
 }
 
-.reset:hover {
+.reset_game_button:hover {
   background-color: red;
+}
+
+.winner_form {
+  padding: 20px;
+  margin: 0 auto ;
+}
+
+.winner_circle {
+  border: 2px solid black;
+  width: 400px;
+  margin:0 auto;
+
+}
+
+#notify_winner {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
 }
