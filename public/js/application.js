@@ -51,7 +51,7 @@ var Game = {
   finish: function() {
     this.endTime = new Date();
     $('#reset').removeClass('hidden');
-    $('#winner').html(this.findPlayerById(winner()).name);
+    $('#winner').html(this.findPlayerById(this.winner()).name);
   },
   elapsedTime: function() {
     return (this.endTime - this.startTime) / 1000;
