@@ -91,7 +91,13 @@ $(document).ready(function() {
   Game.loadGameFromDom();
   $('.reset').on('click', function() { //can pull this function out and name it
     location.reload();
-  })
+  });
+
+  $('#add-player').on('click', function(event){
+    event.preventDefault();
+    var input = "<input type=\"text\" name=\"player_names[]\" placeholder=\"Player\">"
+    $("input[name]:last").after(input);
+  });
 });
 
 
